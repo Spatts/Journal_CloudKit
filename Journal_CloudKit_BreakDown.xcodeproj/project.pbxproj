@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510DCE1E1D58DF5C00D43540 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510DCE1D1D58DF5C00D43540 /* CloudKitManager.swift */; };
+		510DCE201D58EFB700D43540 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510DCE1F1D58EFB700D43540 /* CloudKit.framework */; };
 		BCA42E6C1D57D136004D99A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA42E6B1D57D136004D99A4 /* AppDelegate.swift */; };
 		BCA42E711D57D136004D99A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA42E6F1D57D136004D99A4 /* Main.storyboard */; };
 		BCA42E731D57D137004D99A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA42E721D57D137004D99A4 /* Assets.xcassets */; };
 		BCA42E761D57D137004D99A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA42E741D57D137004D99A4 /* LaunchScreen.storyboard */; };
-		BCA42E831D57D197004D99A4 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA42E821D57D197004D99A4 /* CloudKit.framework */; };
 		BCA42E851D57D1C0004D99A4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA42E841D57D1C0004D99A4 /* Entry.swift */; };
 		BCC74B2D1D57D47400304BB7 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC74B2C1D57D47400304BB7 /* EntryListTableViewController.swift */; };
 		BCC74B2F1D57D4CC00304BB7 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC74B2E1D57D4CC00304BB7 /* EntryController.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		510DCE1D1D58DF5C00D43540 /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		510DCE1F1D58EFB700D43540 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BCA42E681D57D136004D99A4 /* Journal_CloudKit_BreakDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal_CloudKit_BreakDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA42E6B1D57D136004D99A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA42E701D57D136004D99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,7 +29,6 @@
 		BCA42E751D57D137004D99A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCA42E771D57D137004D99A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA42E811D57D192004D99A4 /* Journal_CloudKit_BreakDown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Journal_CloudKit_BreakDown.entitlements; sourceTree = "<group>"; };
-		BCA42E821D57D197004D99A4 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BCA42E841D57D1C0004D99A4 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		BCC74B2C1D57D47400304BB7 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		BCC74B2E1D57D4CC00304BB7 /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCA42E831D57D197004D99A4 /* CloudKit.framework in Frameworks */,
+				510DCE201D58EFB700D43540 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +50,7 @@
 		BCA42E5F1D57D135004D99A4 = {
 			isa = PBXGroup;
 			children = (
-				BCA42E821D57D197004D99A4 /* CloudKit.framework */,
+				510DCE1F1D58EFB700D43540 /* CloudKit.framework */,
 				BCA42E6A1D57D136004D99A4 /* Journal_CloudKit_BreakDown */,
 				BCA42E691D57D136004D99A4 /* Products */,
 			);
@@ -66,11 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				BCA42E811D57D192004D99A4 /* Journal_CloudKit_BreakDown.entitlements */,
-				BCA42E801D57D162004D99A4 /* Utilities */,
-				BCA42E7F1D57D158004D99A4 /* Model */,
+				BCA42E6B1D57D136004D99A4 /* AppDelegate.swift */,
+				BCA42E6F1D57D136004D99A4 /* Main.storyboard */,
 				BCA42E7E1D57D153004D99A4 /* View */,
 				BCA42E7D1D57D14E004D99A4 /* Controller */,
-				BCA42E6F1D57D136004D99A4 /* Main.storyboard */,
+				BCA42E7F1D57D158004D99A4 /* Model */,
 				BCA42E721D57D137004D99A4 /* Assets.xcassets */,
 				BCA42E741D57D137004D99A4 /* LaunchScreen.storyboard */,
 				BCA42E771D57D137004D99A4 /* Info.plist */,
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				BCC74B2E1D57D4CC00304BB7 /* EntryController.swift */,
+				510DCE1D1D58DF5C00D43540 /* CloudKitManager.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -101,14 +104,6 @@
 				BCA42E841D57D1C0004D99A4 /* Entry.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		BCA42E801D57D162004D99A4 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				BCA42E6B1D57D136004D99A4 /* AppDelegate.swift */,
-			);
-			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +138,7 @@
 				TargetAttributes = {
 					BCA42E671D57D136004D99A4 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = HQN23BS377;
+						DevelopmentTeam = M3Z74MK3M2;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -190,6 +185,7 @@
 			files = (
 				BCA42E851D57D1C0004D99A4 /* Entry.swift in Sources */,
 				BCA42E6C1D57D136004D99A4 /* AppDelegate.swift in Sources */,
+				510DCE1E1D58DF5C00D43540 /* CloudKitManager.swift in Sources */,
 				BCC74B2F1D57D4CC00304BB7 /* EntryController.swift in Sources */,
 				BCC74B311D57D57700304BB7 /* EntryDetailViewController.swift in Sources */,
 				BCC74B2D1D57D47400304BB7 /* EntryListTableViewController.swift in Sources */,
@@ -309,7 +305,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Journal_CloudKit_BreakDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diegoa3d.Journal-CloudKit-BreakDown";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StevenPatterson.JournalCK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -322,7 +318,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Journal_CloudKit_BreakDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diegoa3d.Journal-CloudKit-BreakDown";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StevenPatterson.JournalCK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

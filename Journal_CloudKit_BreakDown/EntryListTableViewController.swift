@@ -10,10 +10,14 @@ import UIKit
 
 class EntryListTableViewController: UITableViewController {
 
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tableView.reloadData()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(entriesWereUpdated), name: EntryControllerDidRefreshNotification, object: nil)
+    }
+    
+    func entriesWereUpdated() {
+        self.tableView.reloadData()
+    
     }
     
     // MARK: - Table view data source
